@@ -5,3 +5,8 @@ from selenium import webdriver
 def test(context):
     driver = webdriver.Chrome()
     driver.get("https://www.google.com/")
+
+    @step('Navigate to Ebay')
+    def test(context):
+        driver = webdriver.Chrome()
+        driver.get("https://www.ebay.com/")
